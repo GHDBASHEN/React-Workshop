@@ -1,8 +1,9 @@
 import React from 'react'
-import Header from './components/Header'
-import SlideBar from './components/SlideBar'
-import Article from './components/Article'
-import ArticleWithTitle from './components/ArticleWithTitle.jsx'
+// import Header from './components/Header'
+// import SlideBar from './components/SlideBar'
+// import Article from './components/Article'
+// import ArticleWithTitle from './components/ArticleWithTitle.jsx'
+import UseData from './components/UseData.jsx'
 
 
 const data = [
@@ -23,21 +24,25 @@ const data = [
     content: 'This is the content of article 4',
   }]
 
+  
+
 export default function App() {
   return (
     <>
-      <Header />
+
+      {/* <Header />
       <section className="container">
-        <SlideBar />
-        <div className="article-section">
+        <SlideBar /> */}
+        <UseData />
+        {/* <div className="article-section">
           <Article arti="Article Section" />
           <div className="articles">
             {data.map((item) => {
               return <ArticleWithTitle title={item.title} para={item.content} />
             })}
           </div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
     </>
   )
 }
