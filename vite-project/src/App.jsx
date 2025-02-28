@@ -17,7 +17,11 @@ const data = [
   {
     title: 'Article 3',
     content: 'This is the content of article 3',
-  }, {}]
+  },
+   {
+    title: 'Article 4',
+    content: 'This is the content of article 4',
+  }]
 
 export default function App() {
   return (
@@ -28,40 +32,9 @@ export default function App() {
         <div className="article-section">
           <Article arti="Article Section" />
           <div className="articles">
-            <article>
-              <ArticleWithTitle title="Article Title" para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                bibendum, quam vitae ultricies rhoncus, velit elit volutpat
-                libero, nec eleifend mi eros sed nunc. Nullam nec eros et tellus
-                bibendum ultricies. Sed ut eros nec purus varius aliquam. Nullam
-                nec eros et tellus bibendum ultricies. Sed ut eros nec purus
-                varius aliquam."/>
-            </article>
-          
-
-            <article>
-            <ArticleWithTitle title="Article Title" para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                bibendum, quam vitae ultricies rhoncus, velit elit volutpat
-                libero, nec eleifend mi eros sed nunc. Nullam nec eros et tellus
-                bibendum ultricies. Sed ut eros nec purus varius aliquam. Nullam
-                nec eros et tellus bibendum ultricies. Sed ut eros nec purus
-                varius aliquam."/>
-            </article>
-            <article>
-            <ArticleWithTitle title="Article Title" para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                bibendum, quam vitae ultricies rhoncus, velit elit volutpat
-                libero, nec eleifend mi eros sed nunc. Nullam nec eros et tellus
-                bibendum ultricies. Sed ut eros nec purus varius aliquam. Nullam
-                nec eros et tellus bibendum ultricies. Sed ut eros nec purus
-                varius aliquam."/>
-            </article>
-            <article>
-            <ArticleWithTitle title="Article Title" para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                bibendum, quam vitae ultricies rhoncus, velit elit volutpat
-                libero, nec eleifend mi eros sed nunc. Nullam nec eros et tellus
-                bibendum ultricies. Sed ut eros nec purus varius aliquam. Nullam
-                nec eros et tellus bibendum ultricies. Sed ut eros nec purus
-                varius aliquam."/>
-            </article>
+            {data.map((item) => {
+              return <ArticleWithTitle title={item.title} para={item.content} />
+            })}
           </div>
         </div>
       </section>
