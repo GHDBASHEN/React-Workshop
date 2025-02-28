@@ -1,0 +1,36 @@
+header{
+    background-color: #3F7BFE;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slide-bar{
+   width: 20%;
+   background-color: #6E9DF3;
+    height: 100%;
+}
+
+.article-section{
+    width: 80%;
+    padding: 1em;
+}
+
+.article-section .articles{
+   display: flex;
+}
+
+article{
+    background-color: #F3F3F3;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
